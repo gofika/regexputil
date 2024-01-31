@@ -32,9 +32,9 @@ import (
 
 func main() {
 	bar, matched := regexputil.Match(`Foo(.+)`, "Foobar") // bar="bar" matched=True
-  fmt.Printf("bar: %smatched: %v\n", bar, matched)
+	fmt.Printf("bar: %smatched: %v\n", bar, matched)
 
-  matched = regexputil.IsMatch(`Foo(.+)`, "Foobar") // matched=True
-  fmt.Printf("matched: %v\n", matched)
+	matched = regexputil.IsMatch(`Foo(.+)`, "Foobar") // matched=True
+	fmt.Printf("matched: %v\n", matched)
 }
 ```
